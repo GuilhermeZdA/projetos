@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+::-webkit-input-placeholder {
+    color: #2147B6;
+    font-size: 1.2em;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+div#imagem {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    background: blue url('../imagens/antena.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;   
+    
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+    background-color: rgb(235, 235, 235);
+    overflow: hidden;
+
+    transform: translate(-50%, -50%);
+}
+
+div#formulario {
+    height: 100%;
+}
+
+div#formulario > h1{
+    color: #2147B6;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.caixa {
+    text-align: center;
+    transform: translateX(-23px);
+}
+
+.caixa > span {
+
+    width: 40px;
+    text-align: center;
+    transform: translate(0px, 10px);
+    color: #0d1d4b;
+    font-size: 2em;
+}
+
+.caixa > label{
+    color: #2147B6;
+    font-size: 1.1em;
+}
+
+.caixa > input {
+    height: 32px;
+    width: calc(70%);
+    border: 2px solid #0d1d4b;
+    border-radius: 9px;
+}
+
+div > input[type=submit] {
+    display: block;
+    margin: auto;
+    background-image: linear-gradient(to bottom, #2147B6, #4D8FFF);
+    color: white;
+    font-size: 1em;
+    margin-top: 10px;
+    width: 70%;
+    height: 32px;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+}
+
+div > input[type=submit]:checked {
+    transform: scale(10px, 10px);
+}
+
+
+div > a {
+    display: block;
+    width: 70%;
+    height: 32px;
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 4px;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid #2147B6;
+    border-radius: 9px;
+
+    background-color: white;
+    color: #2147B6;
+}
+
+div > a:hover {
+    background-color: #2147B6;
+    color: white;
+}
+
+
