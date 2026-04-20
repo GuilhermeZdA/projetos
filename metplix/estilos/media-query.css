@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 1000px) {
+    .botão a {
+        margin-right: 100px;
+    }
+}

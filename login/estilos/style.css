@@ -19,7 +19,7 @@
 div#imagem {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
 
     background: #1F45B2 url('../imagens/antena.jpg') top center no-repeat;
     background-size: content;

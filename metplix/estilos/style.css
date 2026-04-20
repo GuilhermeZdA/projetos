@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100dvh;
+    background-color: white;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+}
+
+div#fundo {
+    height: 100vh;
+    width: 100%;
+
+    background: transparent url('../imagens/cinema-p.jpg') right center no-repeat;
+    background-attachment: cover;
+
+}
+
+div#preto {
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+
+}
+
+div#flexis {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#logo {
+    width: 250px;
+    height: 100px;
+    margin-left: 35px;
+    margin-top: 6px;
+    background-image: url('../imagens/metplix-logo.png');
+}
+
+div#slogan {
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    width: 400px;
+
+    color: white;
+    text-align: center;
+    line-height: 3em;
+}
+
+div#slogan h1 {
+    line-height: normal;
+}
+
+div#slogan input {
+    width: 60%;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 1px solid rgba(128, 128, 128, 0.493);
+    border-radius: 5px;
+}
+
+div#slogan input::placeholder {
+    color: white;
+    text-align: center;
+}
+
+.botão a {
+    text-decoration: none;
+    padding: 11px 16px;
+    color: white;
+    font-weight: bold;
+    background-color: #CE0909;
+    border-radius: 8px;
+    margin-right: 35px;
+
+}
+
+.botão-flex {
+    width: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: center;
+
+}
+
+div#login a {
+    height: 35px;
+    width: 30%;
+    padding: 11px 16px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    background-color: #CE0909;
+    border-radius: 8px;
+}
+
+main {
+    height: 100vh;
+    background-color: black;
+    color: white;
+    border-top: 3px solid #CE0909;
+}
