@@ -43,7 +43,7 @@ div#flexis {
 div#logo {
     width: 250px;
     height: 100px;
-    margin-left: 35px;
+    margin-left: 15px;
     margin-top: 6px;
     background-image: url('../imagens/metplix-logo.png');
 }
@@ -55,15 +55,19 @@ div#slogan {
     justify-content: center;
     align-items: center;
     height: 75%;
-    width: 400px;
+    width: 370px;
 
     color: white;
     text-align: center;
-    line-height: 3em;
+    
 }
 
 div#slogan h1 {
-    line-height: normal;
+    padding-bottom: 15px;
+}
+
+div#slogan p {
+    padding-bottom: 15px;
 }
 
 div#slogan input {
@@ -87,7 +91,7 @@ div#slogan input::placeholder {
     font-weight: bold;
     background-color: #CE0909;
     border-radius: 8px;
-    margin-right: 35px;
+    margin-right: 20px;
 
 }
 
@@ -118,4 +122,70 @@ main {
     background-color: black;
     color: white;
     border-top: 3px solid #CE0909;
+}
+
+section {
+    text-align: justify;
+}
+
+.titulo {
+    padding: 20px 0px 25px 0px;
+    text-align: center;
+}
+
+div#plano-pobre {
+    width: 350px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 10px 10px 10px 25px;
+    background-image: linear-gradient(135deg, #5f5b5b , #cec1c1 ,#ac9c9c,#5f5b5b );
+    border: 4px solid #ac9c9c;
+    border-radius: 10px;
+
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.507);
+}
+
+div#plano-pobre > h4, ul > li{
+    font-size: 1.35em;
+    padding: 5px 0px;
+}
+
+div#plano-pobre h2 {
+    font-size: 1.65em;
+    padding: 5px 0px;
+}
+
+div#plano-pobre:hover {
+    transform: scale(1.1);
+    transition: transform .5s;
+
+}
+
+div#plano-rico {
+    /*#ceb009* amarelo original*/
+    width: 350px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 10px 10px 10px 25px;
+    background-image: linear-gradient(135deg, #b99f09, #dac550, #d3b408,#b99f09 );
+    border: 4px solid #ebc90b;
+    border-radius: 10px;
+
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.507);
+}
+
+div#plano-rico > h4, ul > li {
+    font-size: 1.35em;
+    padding: 5px 0px;
+}
+
+div#plano-rico h2 {
+    font-size: 1.65em;
+    padding: 5px 0px;
+}
+
+div#plano-rico:hover {
+    transform: scale(1.1);
+    transition: transform .5s;
+
 }
