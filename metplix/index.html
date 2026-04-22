@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="shortcut icon" href="imagens/metplix.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
 </head>
 <body>
@@ -36,7 +37,7 @@
     </header>
     <main>
         <div>
-            <h1 class="titulo">Planos</h1>
+            <h1 class="titulo">Planos mensais</h1>
         </div>
         <section>
             <div id="plano-pobre">
@@ -65,20 +66,48 @@
             </div>
         </section>
         <div>
-            <h1 class="titulo">Principais filmes</h2>
+            <h1 class="titulo">Filmes em produção</h1>
         </div>
         <section>
-            <div id="atores">
                 <ul id="imagens">
-                    <li id="img1"><img src="imagens/antena-filme.jpg" alt=""></li>
-                    <li id="img2"><img src="imagens/floresta-filme.jpg" alt=""></li>
-                    <li id="img3"><img src="imagens/terror-filme.jpg" alt=""></li>
+                    <li>
+                        <img src="imagens/antena-filme.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="imagens/floresta-filme.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="imagens/terror-filme.jpg" alt="">
+                    </li>
                 </ul>
-            </div>
+        </section>
+        <h1 class="titulo">Perguntas frequentes</h1>
+        <section>
+            <ul id="perguntas">
+                <li>
+                    <h2 onclick="abrirFechar1()" id="title1">Esse site é um golpe?</h2>
+                    <p id="p1">Não há qualquer fundamento para classificar este site como um golpe. A proposta apresentada é simples: oferecer uma oportunidade acessível para pessoas interessadas em ingressar no universo artístico, por meio de um serviço de assinatura estruturado. Em nenhum momento é garantido sucesso imediato, fama ou retorno financeiro, mas sim a possibilidade de participação em um ecossistema voltado ao desenvolvimento de perfis artísticos.</p>
+                </li>
+                <li>
+                    <h2 onclick="abrirFechar2()" id="title2">Quais são os brindes dos Planos?</h2>
+                    <p id="p2">Os brindes variam todo mês, tornando-se sempre uma surpresa agradável. Alguns dos brindes de 2025 foram: quadro autografados, figurinos de filmes famosos e broches.</p>
+                </li>
+                <li>
+                    <h2 onclick="abrirFechar3()" id="title3">As gravações podem ser online?</h2>
+                    <p id="p3">Sim, mas apenas em filmes com temáticas do impacto negativo das redes sociais na convivência social humana.</p>
+                </li>
+            </ul>
         </section>
     </main>
     <footer>
-        
+            <p>Dúvidas? Ligue para <u>0800 123 4567</u></p>
+            <ul>
+                <li><a target="_blank" href="https://github.com/GuilhermeZdA">Github</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+            <p>Site feito por <strong>Guilherme Zacarias</strong></p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
