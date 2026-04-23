@@ -2,3 +2,5 @@
 Repositório para armazenar meus projetos e treinos
 
 Projeto Tela de Login: https://guilhermezda.github.io/projetos/login/index.html
+
+Projeto Landing Page estilo Netflix: https://guilhermezda.github.io/projetos/metplix/index.html
