@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+:root {
+    --corPrincipal1: #ABFFFF
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    height: 80px;
+    background-color: var(--corPrincipal1);
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#logo {
+    margin-left: 35px;
+    padding: 15px;
+    background-color: bisque;
+}
+
+#botao {
+    background-color: rgb(116, 116, 255);
+    padding: 12px 20px;
+    border-radius: 3px;
+    margin-right: 35px;
+    font-size: 1.25em;
+    order: 1;
+}
+
+nav#menu ul {
+    display: flex;
+    gap: 200px;
+}
+
+nav#menu ul li {
+    list-style-type: none;
+    font-size: 1.25em;
+}
+
+div#imagem {
+    height: 400px;
+    background-image: url(imagens/hospital.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
