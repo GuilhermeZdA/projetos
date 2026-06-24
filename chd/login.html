@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
+    <main id="main">
+        <div id="imagem"></div>
+        <div id="login">
+            <div id="opc">
+                <input type="button" value="Funcionário" id="funcionario" onclick="fun()">
+                <input type="button" value="Hospital" id="hospital" onclick="hos()">
+            </div>
+            <div id="logins">
+                <label for="ilogin">Login: </label>
+                <input type="text" id="ilogin">
+                <label for="isenha">Senha:</label>
+                <input type="password" id="isenha">
+                <a href="">Entrar</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@
 
 :root {
     --corPrincipal1: #ABFFFF
+    --corPrincipal2: #E44650
 }
 
 * {
@@ -51,7 +52,7 @@ nav#menu ul li {
 
 div#imagem {
     height: 400px;
-    background-image: url(imagens/hospital.jpg);
+    background-image: url(../imagens/hospital.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
