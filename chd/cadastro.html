@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Hospital</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+    <main id="main">
+        <div id="imagem"></div>
+        <div id="container">
+            <div id="login">
+                <label for="icnpj" class="label">CNPJ: </label>
+                <input type="text" id="icnpj">
+                <label for="icnes">CNES: </label>
+                <input type="text" id="icnes">
+                <button onclick="virarPix()">Confirmar</button>
+            </div>
+            <div id="box">
+                <div id="pix"><img src="imagens/pix-real.png" alt="pix"></div>
+                <a id="botao" href="login.html">Faz o pix</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/cadastro.js"></script>
+</body>
+</html>

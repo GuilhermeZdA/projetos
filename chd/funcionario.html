@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionário home</title>
+    <link rel="stylesheet" href="css/funcionario.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+   <header>
+        <div id="logo">LOGO</div>
+        <nav id="menu">
+            <ul>
+                <li onclick="tab()">Dados dos pacientes</li>
+                <li onclick="cad()">Cadastrar pacientes</li>
+            </ul>
+        </nav>
+   </header>
+   <main>
+        <div id="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Data de nascimento</th>
+                        <th>CPF</th>
+                        <th>Número de telefone</th>
+                        <th>Data agendada</th>
+                        <th>Local</th>
+                        <th>WhatsApp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alysson</td>
+                        <td>12/10/2001</td>
+                        <td>123.456.789-10</td>
+                        <td>(88) 91234-5678</td>
+                        <td>30/06/2026 14:00</td>
+                        <td>Bloco cirurgico C</td>
+                        <td class="material-symbols-outlined">chat</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="cadastrar">
+            <label for="">Nome: </label>
+            <input type="text">
+            <label for="">Data de Nascimento: </label>
+            <input type="date">
+            <label for="">Contato: </label>
+            <input type="tel">
+            <label for="">CPF: </label>
+            <input type="text">
+            <button>Cadastrar</button>
+        </div>
+   </main>
+   
+   <script src="js/funcionario.js"></script>
+</body>
+</html>

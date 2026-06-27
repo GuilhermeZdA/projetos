@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    height: 80px;
+    width: 100vw;
+    background-color: aquamarine;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+div#logo {
+    padding: 15px;
+    background-color: bisque;
+}
+
+nav#menu ul {
+    display: flex;
+    gap: 75px;
+    margin-right: 290px;
+}
+
+nav#menu ul li {
+    list-style-type: none;
+    font-size: 1.25em;
+}
+
+main {
+    height: calc(100vh - 180px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#tabela {
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+table {
+    background-color: lightgray;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: gray;
+}
+
+
+th, td {
+    height: 40px;
+    width: 150px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+tr:nth-child(2n) {
+    background-color: rgb(168, 168, 168);
+}
+
+td.material-symbols-outlined {
+    border-right: 2px solid black;
+    width: 150px;
+    height: 40px;
+    padding-top: 7px;
+}
+
+div#cadastrar {
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 180px);
+    width: 500px;
+    margin-top: 100px;
+}
+
+div#cadastrar button, input {
+    margin-top: 10px;
+
+}
