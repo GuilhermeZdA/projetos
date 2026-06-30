@@ -1,9 +1,19 @@
 @charset "UTF-8";
 
+:root {
+    --branco: #eefffc;
+    --corPrincipal1: #ABFFFF;
+    --corPrincipal2: #E86B73;
+    --corEscura1: #6AD5EF;
+    --corEscura2: #E44650;
+    --botaoAzul: #6AD5EF;
+}
+
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -29,7 +39,9 @@ div#container {
     align-items: center;
     justify-content: space-around;*/
     height: 100%;
-    background: rgb(226, 255, 255);
+    background: var(--branco);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -39,25 +51,15 @@ div#imagem {
     height: 100%;
     background-image: url(../imagens/funcionario.png);
     background-size: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-a#entrar {
-    display: block;
-    text-decoration: none;
-    color: black;
-    padding: 5px 8px;
-    background-color: aqua;
-}
 
-a#cadastrar {
-    display: none;
-    text-decoration: none;
-    color: black;
-    padding: 5px 8px;
-    background-color: white;
-    border: 1px solid aqua;
-}
+
+
 
 div#opc {
     margin-top: 100px;
@@ -65,10 +67,25 @@ div#opc {
 }
 
 div#opc input{
-    height: 30px;
-    width: 100px;
+    width: 150px;
+    font-size: 1.3em;
     padding: 5px 8px;
     margin: 0px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color, color .5s;
+}
+
+input#funcionario {
+    border: 1px solid var(--corEscura1);
+    background-color: var(--branco);
+    color: #6AD5EF;
+}
+
+input#hospital {
+    border: 1px solid var(--corEscura2);
+    background-color: var(--corEscura2);
+    color: var(--branco);
 }
 
 div#login {
@@ -93,4 +110,34 @@ div#senha a {
     margin: auto;
     margin-top: 20px;
     width: 100px;
+}
+
+a#entrar {
+    display: block;
+    text-decoration: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 1px solid var(--botaoAzul);
+    color: black;
+    background-color: var(--corEscura1);
+    transition: background-color .5s;
+}
+
+a#entrar:hover {
+    background-color: var(--branco);
+}
+
+a#cadastrar {
+    display: none;
+    text-decoration: none;
+    padding: 5px 8px;
+    border: 1px solid var(--corEscura2);
+    border-radius: 5px;
+    color: black;
+    background-color: var(--branco);
+    transition: background-color .5s;
+}
+
+a#cadastrar:hover {
+    background-color: var(--corEscura2);
 }

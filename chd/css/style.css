@@ -1,8 +1,11 @@
 @charset "UTF-8";
 
 :root {
-    --corPrincipal1: #ABFFFF
-    --corPrincipal2: #E44650
+    --branco: #eefffc;
+    --corPrincipal1: #ABFFFF;
+    --corPrincipal2: #E86B73;
+    --corEscura1: #6AD5EF;
+    --corEscura2: #E44650;
 }
 
 * {
@@ -20,7 +23,7 @@ body {
 header {
     display: flex;
     height: 80px;
-    background-color: var(--corPrincipal1);
+    background-color: var(--branco);
     justify-content: space-between;
     align-items: center;
 }
@@ -32,12 +35,29 @@ div#logo {
 }
 
 #botao {
-    background-color: rgb(116, 116, 255);
+    background-color: var(--corEscura1);
     padding: 12px 20px;
-    border-radius: 3px;
+    border-radius: 10px;
+    border: 1px solid var(--corEscura1);
     margin-right: 35px;
     font-size: 1.25em;
     order: 1;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+div#botao a {
+    text-decoration: none;
+    color: var(--branco);
+    transition: color .5s;
+}
+
+div#botao:hover {
+    background-color: var(--branco);
+}
+
+div#botao:hover a {
+    color: var(--corEscura1);
 }
 
 nav#menu ul {
