@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+:root {
+    --branco: #eefffc;
+    --corPrincipal1: #ABFFFF;
+    --corPrincipal2: #E86B73;
+    --corEscura1: #6AD5EF;
+    --corEscura2: #E44650;
+    --fonteVermelho: #250000;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +20,7 @@ header {
     display: flex;
     height: 80px;
     width: 100vw;
-    background-color: aquamarine;
+    background-color: var(--corPrincipal2);
     justify-content: space-around;
     align-items: center;
 
@@ -31,6 +40,8 @@ nav#menu ul {
 nav#menu ul li {
     list-style-type: none;
     font-size: 1.25em;
+    color: var(--fonteVermelho);
+    cursor: pointer;
 }
 
 main {
