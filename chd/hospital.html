@@ -11,61 +11,50 @@
         <div id="logo"><h2><a href="index.html">CHD</a></h2></div>
         <nav id="menu">
             <ul>
-                <li onclick="tab()">Dados dos funcionários</li>
-                <li onclick="cad()">Cadastrar funcionários</li>
-                <li></li>
+                <li onclick="cad()">Informações da Consulta</li>
             </ul>
         </nav>
    </header>
    <main>
+        <div id="box-titulo">
+            <h1 id="titulo">Busca de Consulta</h1>
+        </div>
     <div id="tabela">
         <table>
             <thead>
                 <tr>
-                    <th>Nome</th>
-                    <th>Data de nascimento</th>
-                    <th>CPF</th>
-                    <th>Número de telefone</th>
-                    <th>Número do COREN</th>
+                        <th>Nome</th>
+                        <th>Data de nascimento</th>
+                        <th>CPF</th>
+                        <th>Número de telefone</th>
+                        <th>Data agendada</th>
+                        <th>Local</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Weskley</td>
-                    <td>30/07/1955</td>
-                    <td>109.876.543-21</td>
-                    <td>(88) 95678-1234</td>
-                    <td>123456</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Alysson</td>
+                    <td>12/10/2001</td>
+                    <td>123.456.789-10</td>
+                    <td>(88) 91234-5678</td>
+                    <td>30/09/2026 14:00</td>
+                    <td>Bloco cirurgico C</td>
                 </tr>
             </tbody>
         </table>
     </div>
     <div id="cadastrar">
-        <label for="">Nome: </label>
-        <input type="text">
-        <label for="">Data de Nascimento: </label>
-        <input type="date">
-        <label for="">Contato: </label>
-        <input type="tel">
-        <label for="">CPF: </label>
-        <input type="text">
-        <label for="">COREN: </label>
-        <input type="text">
-        <button>Cadastrar</button>
+        <div>
+            <label for="">Data de Nascimento: </label>
+            <input type="date">
+        </div>
+        <div>
+            <label for="">CPF: </label>
+            <input type="text">
+        </div>
+        <div>
+            <input onclick="tab()" id="botao-final" type="button" value="Buscar">
+        </div>
     </div>
    </main>
     <script src="js/hospital.js"></script>

@@ -86,8 +86,11 @@ input#hospital {
     color: var(--branco);
 }
 
-div#login {
+div#box-input {
     margin-top: 150px;
+}
+
+div#login {
     text-align: center;
 }
 

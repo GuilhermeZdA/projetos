@@ -1,16 +1,17 @@
 
 var fundo = document.getElementById("main")
 var imagem = document.getElementById("imagem")
-var cadastrar = document.getElementById("cadastrar")
 var entrar = document.getElementById("entrar")
 var buttonFun = document.getElementById("funcionario")
 var buttonHos = document.getElementById("hospital")
-
+var login = document.getElementById("login")
+var senha = document.getElementById("senha-label")
 
 function hos () {
     fundo.style.backgroundImage = "url('imagens/fundovermelho.png')"
     imagem.style.backgroundImage = "url('imagens/paciente.png')"
-    cadastrar.style.display = "block"
+    login.style.display = "none"
+    senha.textContent = "CPF:"
 
     entrar.href = "hospital.html"
     entrar.style.backgroundColor = "var(--corEscura2)"
@@ -25,7 +26,8 @@ function hos () {
 function fun () {
     fundo.style.backgroundImage = "url('imagens/fundoazul.png')"
     imagem.style.backgroundImage = "url('imagens/funcionario.png')"
-    cadastrar.style.display = "none"
+    login.style.display = "block"
+    senha.textContent = "Senha:"
 
     entrar.href = "funcionario.html"
     entrar.style.backgroundColor = "var(--botaoAzul)"

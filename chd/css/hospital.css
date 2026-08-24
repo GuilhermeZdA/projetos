@@ -16,20 +16,24 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    color: rgb(255, 242, 242);
+}
+
 header {
     display: flex;
     height: 80px;
     width: 100vw;
-    background-color: var(--corPrincipal2);
+    background-color: #ca3636e7;
     justify-content: space-around;
     align-items: center;
 
 }
 
 div#logo {
-    margin-left: 35px;
+    margin-left: 0px;
     padding: 14px;
-    background-color: #004c9493;
+    background-color: #410202;
     border-radius: 30px;
 }
 
@@ -39,26 +43,37 @@ div#logo a {
 }
 nav#menu ul {
     display: flex;
-    gap: 75px;
-    margin-right: 290px;
+    gap: 0px;
+    margin-right: 410px;
 }
 
 nav#menu ul li {
     list-style-type: none;
-    font-size: 1.25em;
-    color: var(--fonteVermelho);
+    font-size: 1.4em;
+    color: white;
     cursor: pointer;
 }
 
 main {
-    height: calc(100vh - 180px);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+div#box-titulo {
+    text-align: center;
+    width: 450px;
+    border: 1px solid #2500008e;
+    border-radius: 9px;
+    padding: 4px;
+    margin-top: 80px;
+    color: #290101;
+    background-image: linear-gradient(to right, rgba(255, 225, 225, 0.61), rgba(243, 227, 227, 0.527), rgba(252, 222, 222, 0.288));
+}
+
 div#tabela {
-    display: flex;
+    display: none;
     height: 100%;
     align-items: flex-start;
     justify-content: center;
@@ -66,12 +81,12 @@ div#tabela {
 }
 
 table {
-    background-color: lightgray;
+    background-color: rgb(236, 217, 217);
     border-collapse: collapse;
 }
 
 th {
-    background-color: gray;
+    background-color: #ca3636e7;
 }
 
 
@@ -79,11 +94,12 @@ th, td {
     height: 40px;
     width: 150px;
     border: 1px solid black;
+    color: black;
     text-align: center;
 }
 
 tr:nth-child(2n) {
-    background-color: rgb(168, 168, 168);
+    background-color: rgb(182, 158, 158);
 }
 
 td.material-symbols-outlined {
@@ -94,16 +110,56 @@ td.material-symbols-outlined {
 }
 
 div#cadastrar {
-    display: none;
+    display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 180px);
-    width: 500px;
-    margin-top: 100px;
+
+    background-image: linear-gradient(to right, rgba(255, 225, 225, 0.61), rgba(243, 227, 227, 0.527), rgba(252, 222, 222, 0.288));
+    font-size: 1.2em;
+    border: 1px solid #2500008e;
+    border-radius: 9px;
+    padding: 10px;
+    width: 450px;
+    max-height: 400px;
+    margin-top: 80px;
 }
 
-div#cadastrar button, input {
-    margin-top: 10px;
+div#cadastrar > div {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    align-items: center;
+    margin-top: 20px;
+}
 
+div#cadastrar label {
+    display: inline;
+    text-align: right;
+    margin-right: 10px;
+    color: #290101;
+    font-weight: 600;
+}
+
+div#cadastrar input {
+    display: inline;
+    width: 200px;
+    padding: 4px 0px;
+}
+
+input#botao-final {
+    width: 200px;
+    padding: 5px;
+    font-size: 1.1em;
+    border-radius: 4px;
+    color: white;
+    border: 1px solid #2500008e;
+    background-color: #410202;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+
+input#botao-final:hover {
+    background-color: white;
+    color: #410202;
 }
