@@ -20,7 +20,7 @@ header {
     display: flex;
     height: 80px;
     width: 100vw;
-    background-color: var(--corPrincipal1);
+    background-color: #346BA6;
     justify-content: space-around;
     align-items: center;
 }
