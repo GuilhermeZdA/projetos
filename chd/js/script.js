@@ -9,7 +9,7 @@ var buttonHos = document.getElementById("hospital")
 
 function hos () {
     fundo.style.backgroundImage = "url('imagens/fundovermelho.png')"
-    imagem.style.backgroundImage = "url('imagens/hospital-desenho.png')"
+    imagem.style.backgroundImage = "url('imagens/paciente.png')"
     cadastrar.style.display = "block"
 
     entrar.href = "hospital.html"

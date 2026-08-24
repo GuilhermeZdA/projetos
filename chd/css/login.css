@@ -1,24 +1,25 @@
 @charset "UTF-8";
 
 :root {
-    --branco: #eefffc;
+    --branco: #f3f8ff;
     --corPrincipal1: #ABFFFF;
     --corPrincipal2: #E86B73;
-    --corEscura1: #6AD5EF;
+    --corEscura1: #004c94ab;
     --corEscura2: #E44650;
-    --botaoAzul: #6AD5EF;
+    --botaoAzul: #004c94ab;
 }
 
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
     height: 100vh;
     width: 100vw;
+    font-weight: 500;
 }
 
 main#main {
@@ -58,9 +59,6 @@ div#imagem {
 }
 
 
-
-
-
 div#opc {
     margin-top: 100px;
     text-align: center;
@@ -71,7 +69,7 @@ div#opc input{
     font-size: 1.3em;
     padding: 5px 8px;
     margin: 0px 20px;
-    border-radius: 7px;
+    border-radius: 9px;
     cursor: pointer;
     transition: background-color, color .5s;
 }
@@ -79,7 +77,7 @@ div#opc input{
 input#funcionario {
     border: 1px solid var(--corEscura1);
     background-color: var(--branco);
-    color: #6AD5EF;
+    color: var(--corEscura1);
 }
 
 input#hospital {
@@ -115,10 +113,10 @@ div#senha a {
 a#entrar {
     display: block;
     text-decoration: none;
-    padding: 5px 8px;
-    border-radius: 5px;
+    padding: 6px 9px;
+    border-radius: 9px;
     border: 1px solid var(--botaoAzul);
-    color: black;
+    color: var(--branco);
     background-color: var(--corEscura1);
     transition: background-color .5s;
 }

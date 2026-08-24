@@ -12,12 +12,13 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Montserrat','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
     height: 100vh;
     width: 100vw;
+    background-image: linear-gradient(to right, #004c9486, #44080891)
 }
 
 header {
@@ -26,19 +27,28 @@ header {
     background-color: var(--branco);
     justify-content: space-between;
     align-items: center;
+    font-weight: 500;
 }
 
 div#logo {
     margin-left: 35px;
-    padding: 15px;
-    background-color: bisque;
+    padding: 14px;
+    /*background-image: linear-gradient(to right, #004d94, #440808);*/
+    background-color: #004c9493;
+    border-radius: 30px;
+}
+
+div#logo h2 {
+    color: #f1f8ff;
 }
 
 #botao {
-    background-color: var(--corEscura1);
+    /*background-color: var(--corEscura1);*/
+    /*background-image: linear-gradient(to right, #004c9493, #004c94bd);*/
+    background-color: #004c9493;
     padding: 12px 20px;
     border-radius: 10px;
-    border: 1px solid var(--corEscura1);
+    border: 1px solid #004c9450;
     margin-right: 35px;
     font-size: 1.25em;
     order: 1;
@@ -57,24 +67,75 @@ div#botao:hover {
 }
 
 div#botao:hover a {
-    color: var(--corEscura1);
+    color: #004c9493;
 }
 
 nav#menu ul {
     display: flex;
-    gap: 200px;
+    align-items: center;
+    gap: 170px;
 }
 
 nav#menu ul li {
     list-style-type: none;
     font-size: 1.25em;
+    cursor: pointer;
+}
+
+li#div-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 140px;
+    position: relative;
+}
+
+li#div-input input {
+    width: 100%;
+    background-image: linear-gradient(to right, #004c9423, #004c941c);
+    border: 1px solid #eefffc;
+    border-radius: 15px;
+    height: 35px;
+    padding-left: 4px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+input:focus {
+  outline-color: #004c9423;
+}
+
+li#div-input span {
+    position: absolute;
+    left: 105px;
+    pointer-events: none;
+
 }
 
 div#imagem {
+    width: 100%;
     height: 400px;
-    background-image: url(../imagens/hospital.jpg);
+    background-image: linear-gradient(to right, #004c941f, rgba(0, 0, 0, 0.212), #44080815), url(../imagens/hospita-pequenol.jpg);
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.301);
+}
+section#texto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+article.box {
+    text-align: left;
+    text-indent: 20px;
+    height: 200px;
+    width: 300px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    border-radius: 18px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.301);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.048), rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.164) , rgba(255, 255, 255, 0.295));
 }
 

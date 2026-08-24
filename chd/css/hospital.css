@@ -27,10 +27,16 @@ header {
 }
 
 div#logo {
-    padding: 15px;
-    background-color: bisque;
+    margin-left: 35px;
+    padding: 14px;
+    background-color: #004c9493;
+    border-radius: 30px;
 }
 
+div#logo a {
+    text-decoration: none;
+    color: #eefffc;
+}
 nav#menu ul {
     display: flex;
     gap: 75px;

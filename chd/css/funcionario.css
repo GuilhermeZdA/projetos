@@ -20,14 +20,21 @@ header {
     display: flex;
     height: 80px;
     width: 100vw;
-    background-color: #346BA6;
+    background-color: #004c94ab;
     justify-content: space-around;
     align-items: center;
 }
 
 div#logo {
-    padding: 15px;
-    background-color: bisque;
+    margin-left: 35px;
+    padding: 14px;
+    background-color: #004c9493;
+    border-radius: 30px;
+}
+
+div#logo a {
+    text-decoration: none;
+    color: #eefffc;
 }
 
 nav#menu ul {
